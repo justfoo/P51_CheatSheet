@@ -1,0 +1,72 @@
+%-----------------------------------------------------------------
+% TITLE PAGE
+%-----------------------------------------------------------------
+% deactivate header, footer, and autothumbnar
+\pagestyle{superempty}
+\newlength{\centeroffset}
+\setlength\centeroffset{(\chevin-\outmar-0.5cm)/2}
+
+\begin{tikzpicture}[overlay, remember picture]
+	\node[
+	]() at ([xshift=\centeroffset,yshift=8.5cm]current page.center) {
+		\Huge \titlefont\textbf{Pocket Checklist}
+	};
+	\node[
+	]() at ([xshift=\centeroffset,yshift=7cm]current page.center) {
+		\resizebox{10cm}{!}{\titlefont\textbf{\colorbox{color1}{\textcolor{white}{\aircraftlong}}}}
+	};
+	\node[
+	]() at ([xshift=\centeroffset,yshift=5.5cm]current page.center) {
+		\Large \titlefont\textbf{\colorbox{color1}{\textcolor{white}{REV: \today}}} \blue{}
+	};
+	\node[
+	]() at ([xshift=\centeroffset,yshift=-1cm]current page.center) {
+		\includegraphics[
+			width=0.8\linewidth,
+			page = {52},
+			trim = {2cm, 16.5cm, 2cm, 15.875cm},
+			clip
+		]{AAF_MAN_51-127-5--P-51D-K_Manual.pdf}
+	};
+	% Black area for white chevrons
+	\fill[color1]
+		([xshift=\outmar, yshift=0.2cm]current page text area.north east) --
+		([xshift=\outmar, yshift=-\botmar]current page text area.south east) --
+		([xshift=\chevin-0.5cm, yshift=-\botmar]current page text area.south east) --
+		([xshift=\chevin-0.5cm, yshift=0.2cm]current page text area.north east) --
+		cycle;
+\end{tikzpicture}
+
+
+% label for hyperrefs back to frontpage
+\label{frontpage}
+% make chevrons
+
+% Example Single-Line Chevron Title
+%\thumbfront{Procedures}{0}
+
+% Example Double-Line Chevron Title
+%\thumbfront{\begin{tabular}{c} AWG-9 \\ Radar \end{tabular}}{1}
+
+\thumbfront{\begin{tabular}{c} Aircraft \\ Description \end{tabular}}{0}
+\thumbfront{\begin{tabular}{c} Normal \\ Procedures \end{tabular}}{1}
+\thumbfront{\begin{tabular}{c} Flight \\ Characteristics \end{tabular}}{2}
+\thumbfront{\begin{tabular}{c} Emergency \\ Procedures \end{tabular}}{3}
+\thumbfront{\begin{tabular}{c} Operation \\ Charts \end{tabular}}{4}
+
+\thumbwide
+
+\clearpage
+\null\vspace{0cm}
+
+\begin{tcolorbox}[
+		enhanced, colback=white, colframe=color1, colbacktitle=white, coltitle=color1, sharp corners, attach boxed title to top center={yshift=2mm},
+		boxed title style={
+			sharp corners,
+			drop shadow=color1!100
+			}, title=\LARGE\textbf{DISCLAIMER}
+	]
+	\textbf{This document represents a personal project and is intended for entertainment purposes only. Do not use for training purposes or in real life scenarios.}
+\end{tcolorbox}
+
+\cleardoublepage

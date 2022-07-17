@@ -1,0 +1,14 @@
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.DS_Store
+*.fls
+*.fdb_latexmk
+*.cb
+*.cb2
+*.maf
+*.mtc*
+P51_CheatSheet.pdf
