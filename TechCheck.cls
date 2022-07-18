@@ -224,6 +224,7 @@
 % color1 - main color
 % color2 - highlight color
 % color3 - alternate highlight color
+% color5 - high attention alternate main color
 
 \DeclareOption{colorful}{
 	\colorlet{color1}{black}
@@ -231,6 +232,7 @@
 	\colorlet{color2}{NavyBlue}
 	\colorlet{color3}{NavyBlue}
 	\definecolor{color4}{HTML}{FFE534} % bf2042yellow
+	\definecolor{color5}{HTML}{990000} % dark red
 }
 
 \DeclareOption{b/w}{
@@ -238,6 +240,7 @@
 	\colorlet{color2}{black}
 	\colorlet{color3}{black}
 	\definecolor{color4}{HTML}{FFE534} % bf2042yellow
+	\definecolor{color5}{HTML}{990000} % dark red
 }
 
 %-----------------------------------------------------------------
@@ -903,7 +906,7 @@
 	\end{tcolorbox}
 }
 
-\newcommand{\warningbox}[1]{
+\newcommand{\cautionbox}[1]{
 	\begin{tcolorbox}[
 		enhanced,
 		colback=white,
@@ -917,6 +920,27 @@
 		boxed title style={
 		sharp corners,
 		drop shadow=color1!100
+		},
+		title=\large CAUTION
+	]
+		{#1}
+	\end{tcolorbox}
+}
+
+\newcommand{\warningbox}[1]{
+	\begin{tcolorbox}[
+		enhanced,
+		colback=white,
+		colframe=color5,
+		sharp corners,
+		frame hidden,
+		colbacktitle=white,
+		coltitle=color5,
+    fonttitle=\titlefont\bfseries,
+		attach boxed title to top center,
+		boxed title style={
+		sharp corners,
+		drop shadow=color5!100
 		},
 		title=\large WARNING
 	]
