@@ -154,10 +154,10 @@
     \blueitem{Prop}{\textbf{INCREASE} (forward)}
     \blueitem{Friction locks}{\textbf{TIGHTENED}}
     \blueitem{Fuel booster}{\textbf{ON} or \textbf{EMERGENCY}}
-    \blueitem{Hydraulic pressure}{\textbf{800--1100 psi}}
+    \blueitem{Hydraulic pres.}{\textbf{800--1100 psi}}
     \blueitem{Canopy}{\textbf{CLOSED}}
     \blueitem{Shoulder harness}{\textbf{LOCKED}}
-    \blueitem{Engine instruments}{
+    \blueitem{Engine \break{} instruments}{
         \begin{subenumerate}
             \item \textbf{Temperature} \dotfill \textbf{CHECK}
             \item \textbf{Pressure} \dotfill \textbf{CHECK}
@@ -168,7 +168,63 @@
 \end{tablenumerate}
 %------------------------------------------------------------------------------%
 \subsection{TAKEOFF}
+% The manual does not provide good takeoff procedure documentation
+% this section is heavily supplemented from my own notes and practices instead
+\begin{tablenumerate}
+    \blueitem{Canopy}{\textbf{CLOSED}}
+    \blueitem{Flaps}{\textbf{VERIFY}
+        \begin{subitemize}
+            \item Normal weight \dotfill \textbf{UP}
+            \item Heavy weight \dotfill \textbf{10°--20°}
+        \end{subitemize}}
+    \blueitem{Trim tabs}{\textbf{VERIFY}
+        \begin{subenumerate}
+            \item \textbf{Aileron} \dotfill \textbf{0°}
+            \item \textbf{Rudder} \dotfill \textbf{5° RIGHT}
+            \item \textbf{Elevator}
+            \begin{subitemize}
+                \item no combat tanks \dotfill \textbf{2° DOWN}
+                \item with combat tanks \dotfill \textbf{4° DOWN}
+            \end{subitemize}
+        \end{subenumerate}}
+    \blueitem{Takeoff roll}{
+        \begin{subenumerate}
+            \item \textbf{Wheel brakes} \dotfill \textbf{ON}
+            \item \textbf{Prop control} \dotfill \textbf{INCREASE} (forward)
+            \item \textbf{Manifold pressure} \dotfill \textbf{35''}
+            \item \textbf{Wheel brakes} \dotfill \textbf{OFF}
+            \item \textbf{Manifold pressure} \dotfill \textbf{61''}
+            \item \textbf{Speed}
+            \begin{subenumerate}
+                \item Center stick \dotfill \textbf{100 mph}
+                \item Rotate \dotfill \textbf{120 mph}
+            \end{subenumerate}
+        \end{subenumerate}}
+    \blueitem{At 500ft}{
+        \begin{subenumerate}
+            \item \textbf{Manifold pressure} \dotfill \textbf{46''}
+            \item \textbf{Prop control} \dotfill \textbf{2700 rpm}
+            \item \textbf{Trim} \dotfill \textbf{AS DESIRED}
+            \item \textbf{Booster Pump} \dotfill \textbf{NORMAL}
+            \item \textbf{Instruments} \dotfill \textbf{CHECK}
+            \begin{subitemize}
+                \item Ammeter at takeoff \dotfill \textbf{< 100 amps}
+                \item Ammeter after 5 min \dotfill \textbf{< 50 amps}
+                \item Hydraulic pres. \dotfill \textbf{100 psi} after gear retracted
+                \item If instruments out of range \dotfill \textbf{ABORT}
+            \end{subitemize}
+        \end{subenumerate}}
+\end{tablenumerate}
 
+\notebox{
+    Do not lift the tail too soon this increases torque action. Pushing the
+    stick forward unlocks the tail wheel, thereby making steering difficult.
+    Hold the tail DOWN until sufficient speed for rudder control is attained
+    then raise the tail slowly.}
+\cautionbox{
+    Don't brake the wheels after takeoff. Doing so may fuse the discs of brakes
+    that are hot from extended taxiing. If this happens you'll nose up or
+    groundloop on landing.}
 
 %==============================================================================%
 \section{LANDING}
