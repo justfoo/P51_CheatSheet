@@ -48,13 +48,13 @@
 
 \frontmatter
 \pagestyle{empty}
-\dominitoc
+\dominitoc{}
 \tableofcontents
-\cleardoublepage
+\cleardoublepage{}
 
 % restart page counter
 \setcounter{page}{1}
-\mainmatter
+\mainmatter{}
 % reactivate header and footer
 \pagestyle{body}
 
@@ -66,8 +66,8 @@
 
 \iftoggle{print}{
 	\pagestyle{superempty}
-	\newpage \null
-	\thumbwide
-	\newpage \null
-	}{}
+	\newpage \null{}
+	\thumbwide{}
+	\newpage \null{}
+}{}
 \end{document}
