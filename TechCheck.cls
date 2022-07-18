@@ -934,8 +934,8 @@
 		colframe=color5,
 		sharp corners,
 		frame hidden,
-		colbacktitle=white,
-		coltitle=color5,
+		colbacktitle=color5,
+		coltitle=white,
     fonttitle=\titlefont\bfseries,
 		attach boxed title to top center,
 		boxed title style={
