@@ -30,11 +30,11 @@
 	};
 	% Black area for white chevrons
 	\fill[color1]
-		([xshift=\outmar, yshift=0.2cm]current page text area.north east) --
-		([xshift=\outmar, yshift=-\botmar]current page text area.south east) --
-		([xshift=\chevin-0.5cm, yshift=-\botmar]current page text area.south east) --
-		([xshift=\chevin-0.5cm, yshift=0.2cm]current page text area.north east) --
-		cycle;
+	([xshift=\outmar, yshift=0.2cm]current page text area.north east) --
+	([xshift=\outmar, yshift=-\botmar]current page text area.south east) --
+	([xshift=\chevin-0.5cm, yshift=-\botmar]current page text area.south east) --
+	([xshift=\chevin-0.5cm, yshift=0.2cm]current page text area.north east) --
+	cycle;
 \end{tikzpicture}
 
 
@@ -54,7 +54,7 @@
 \thumbfront{\begin{tabular}{c} Emergency \\ Procedures \end{tabular}}{3}
 \thumbfront{\begin{tabular}{c} Operation \\ Charts \end{tabular}}{4}
 
-\thumbwide
+\thumbwide{}
 
 \clearpage
 \null\vspace{0cm}
@@ -62,11 +62,11 @@
 \begin{tcolorbox}[
 		enhanced, colback=white, colframe=color1, colbacktitle=white, coltitle=color1, sharp corners, attach boxed title to top center={yshift=2mm},
 		boxed title style={
-			sharp corners,
-			drop shadow=color1!100
+				sharp corners,
+				drop shadow=color1!100
 			}, title=\LARGE\textbf{DISCLAIMER}
 	]
 	\textbf{This document represents a personal project and is intended for entertainment purposes only. Do not use for training purposes or in real life scenarios.}
 \end{tcolorbox}
 
-\cleardoublepage
+\cleardoublepage{}
