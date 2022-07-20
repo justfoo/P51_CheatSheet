@@ -44,7 +44,7 @@
 \RequirePackage{graphicx} % used for figures
 \graphicspath{{images/}} % put figures inside folder 'images'  in same folder as .tex
 \RequirePackage{subcaption} % used for subfigures
-\RequirePackage[dvipsnames,table,xcdraw]{xcolor} %colors, dvips -> extra premade colors
+\RequirePackage[dvipsnames]{xcolor} %colors, dvips -> extra premade colors
 \RequirePackage[explicit]{titlesec} % formating of titles
 \RequirePackage{siunitx} % SI units
 \RequirePackage{tikz} % shapes, figures
