@@ -22,41 +22,50 @@
         }
 
         %----------TABLE DATA BEGIN----------%
-        {TABLE OF MANIFOLD PRESURE AND RPM\\ LIMITS FOR FLIGHT}  \\
-        {} & {TAKEOFF\\ MAXIMUM} & {WAR\\ EMERGENCY} & {MILITARY\\ POWER} & {MAXIMUM\\ CONTINUOUS} & {MAXIMUM\\ CRUISE} \\
-        {MANIFOLD\\ PRESSURE}  & {61''}  & {67''} & {61''} & {46''} & {42''}      \\
-        {RPM}                  & {3000}  & {3000} & {3000} & {2700} & {2400} \\
+        {TABLE OF MANIFOLD PRESURE AND RPM                   \\ LIMITS FOR FLIGHT}  \\
+        {}    & {TAKEOFF                                     \\ MAXIMUM} & {WAR\\ EMERGENCY} & {MILITARY\\ POWER} & {MAXIMUM\\ CONTINUOUS} & {MAXIMUM\\ CRUISE} \\
+        {MANIFOLD                                            \\ PRESSURE}  & {61''}  & {67''} & {61''} & {46''} & {42''}      \\
+        {RPM} & {3000}   & {3000} & {3000} & {2700} & {2400} \\
         %-----------TABLE DATA END-----------%
-
     \end{tblr}
 \end{table}
 \begin{table}[ht]
     \small
     \centering
     \begin{tblr}{
-            % Applies to the entire table
-            hlines = {2pt, color5},
-            vlines = {2pt, color5},
-            rows   = {36pt},
-            cells  = {c, m, font=\bfseries},
-            % Specific Overrides
-            row{2}       = {24pt},
-            row{6}       = {18pt},
-            column{1,7}  = {9pt, color5},
-            cell{1,6}{1} = {r=1,c=7}{color5, fg=white},
-        }
+        % Applies to the entire table
+        hlines = {2pt, color5},
+        vlines = {2pt, color5},
+        rows   = {36pt},
+        cells  = {c, m, font=\bfseries},
+        % Specific Overrides
+        row{2}       = {24pt},
+        row{6}       = {18pt},
+        column{1,7}  = {9pt, color5},
+        cell{1,6}{1} = {r=1,c=7}{color5, fg=white},
+            }
 
-        %----------TABLE DATA BEGIN----------%
-        {TABLE OF ENGINE INSTRUMENT LIMITS} \\
-        {} & {} & {COOLANT\\ TEMPERATURE} & {OIL\\ TEMPERATURE} & {OIL\\ PRESSURE} & {FUEL\\ PRESSURE} & {} \\
-        {} & {MINIMUM}  & {}             & {}          & {50 PSI}       & {14 PSI}     & {}  \\
-        {} & {DESIRED}  & {100°--110°C}  & {70°--80°C} & {70--80 PSI}   & {16--18 PSI} & {}  \\
-        {} & {MAXIMUM}  & {121°}         & {105°}      & {}             & {19 PSI}  & {} \\
-        {}  \\
+            %----------TABLE DATA BEGIN----------%
+        {TABLE OF ENGINE INSTRUMENT LIMITS}                                             \\
+        {} & {}        & {COOLANT                                                       \\ TEMPERATURE} & {OIL\\ TEMPERATURE} & {OIL\\ PRESSURE} & {FUEL\\ PRESSURE} & {} \\
+        {} & {MINIMUM} & {}            & {}          & {50 PSI}     & {14 PSI}     & {} \\
+        {} & {DESIRED} & {100°--110°C} & {70°--80°C} & {70--80 PSI} & {16--18 PSI} & {} \\
+        {} & {MAXIMUM} & {121°}        & {105°}      & {}           & {19 PSI}     & {} \\
+        {}                                                                              \\
         %-----------TABLE DATA END-----------%
-
     \end{tblr}
 \end{table}
+
+% OOPS GFX
+\begin{center}
+    \includegraphics[
+        width = 5cm,
+        page  = 55,
+        trim  = 19.1cm 28.8cm 1.2cm 8.8cm,
+        clip  = true,
+    ]{AAF_MAN_51-127-5--P-51D-K_Manual.pdf}
+\end{center}
+
 \clearpage
 
 
