@@ -40,11 +40,11 @@
 % Determine which files included in output
 \includeonly{
 	./sections/P51_titlepage,
-	./sections/P51_aircraft_description,
 	./sections/P51_normal_procedures,
-	./sections/P51_flight_characteristics,
 	./sections/P51_emergency_procedures,
-	./sections/P51_operation_charts,
+	% ./sections/P51_flight_characteristics,
+    % ./sections/P51_aircraft_description,
+	% ./sections/P51_operation_charts,
 }
 
 \begin{document}
@@ -62,11 +62,11 @@
 % reactivate header and footer
 \pagestyle{body}
 
-\include{./sections/P51_aircraft_description}
 \include{./sections/P51_normal_procedures}
-\include{./sections/P51_flight_characteristics}
 \include{./sections/P51_emergency_procedures}
-\include{./sections/P51_operation_charts}
+% \include{./sections/P51_flight_characteristics}
+% \include{./sections/P51_aircraft_description}
+% \include{./sections/P51_operation_charts}
 
 \iftoggle{print}{
 	\pagestyle{superempty}
