@@ -101,27 +101,36 @@
         \end{subenumerate} }
     \blueitem{Fuselage fuel}{\textbf{CHECK}}
     \blueitem{Flap handle}{\textbf{UP}}
-    \blueitem{Carburetor}{\textbf{RAM AIR} (forward)}
+    \blueitem{Carburetor}{
+        \begin{subenumerate}
+            \item \textbf{Ram air control} \dotfill \textbf{RAM AIR} (fwd)
+            \item \textbf{Hot air control} \dotfill \textbf{NORMAL} (fwd)
+        \end{subenumerate} }
     \blueitem{Trim tabs}{
         \begin{subenumerate}
             \item \textbf{Aileron} \dotfill \textbf{0°}
             \item \textbf{Rudder} \dotfill \textbf{5° RIGHT}
             \item \textbf{Elevator}
-            \begin{itemize}
+            \begin{subitemize}
                 \item \textbf{no combat tanks} \dotfill \textbf{2° DOWN}
                 \item \textbf{with combat tanks} \dotfill \textbf{4° DOWN}
-            \end{itemize}
+            \end{subitemize}
         \end{subenumerate} }
     \blueitem{Gear handle}{\textbf{DOWN}}
     \blueitem{Left fuel gage}{\textbf{CHECK}}
-    \blueitem{Mixture control}{\textbf{IDLE CUT-OFF}}
-    \blueitem{Prop control}{\textbf{INCREASE} (forward)}
-    \blueitem{Throttle}{\textbf{START} (open one inch)}
+    \blueitem{Mixture control}{\textbf{IDLE CUT-OFF} (aft)}
+    \blueitem{Prop control}{\textbf{INCREASE} (fwd)}
+    \blueitem{Throttle}{\textbf{START} (fwd 1'')}
     \blueitem{Armament}{
         \begin{subenumerate}
             \item \textbf{Bomb and Rocket} \dotfill \textbf{OFF}
             \item \textbf{Gun safety} \dotfill \textbf{OFF}
-            \item \textbf{Gunsight selector-dimmer switch} \dotfill \textbf{ON}
+            \item \textbf{Gunsight}
+            \begin{subitemize}
+                \item \textbf{Brightness} \dotfill \textbf{AS DESIRED}
+                \item \textbf{Gyro power} \dotfill \textbf{ON}
+                \item \textbf{Gunsight mode} \dotfill \textbf{FIXED}
+            \end{subitemize}
         \end{subenumerate}}
     \blueitem{Altimeter}{\textbf{SET}}
     \blueitem{Gyro instruments}{
@@ -133,19 +142,27 @@
     \blueitem{Parking brakes}{\textbf{SET}}
     \blueitem{Supercharger}{\textbf{AUTO}}
     \blueitem{Fuel shut-off}{\textbf{ON}}
-    \blueitem{Fuel selector}{\textbf{SET}}
+    \blueitem{Fuel selector}{\textbf{MAIN-LEFT}}
     \blueitem{Right fuel gage}{\textbf{CHECK}}
-    \blueitem{Fuel booster}{\textbf{ON/NORMAL}}
+    \blueitem{Fuel booster}{\textbf{ON}}
     \blueitem{Ignition}{\textbf{BOTH}}
     \blueitem{Electrical system}{
         \begin{subenumerate}
             \item \textbf{Battery} \dotfill \textbf{ON}
             \item \textbf{Generator} \dotfill \textbf{ON}
         \end{subenumerate}}
-    \blueitem{Coolant and oil}{
+    \blueitem{Radiator air ctrls}{
         \begin{subenumerate}
-            \item \textbf{Manual close/open} \dotfill \textbf{CHECK}
-            \item \textbf{Switch position} \dotfill \textbf{AUTOMATIC}
+            \item \textbf{Coolant}
+            \begin{subitemize}
+                \item \textbf{Manual open/close} \dotfill \textbf{CHECK}
+                \item \textbf{Switch position} \dotfill \textbf{AUTOMATIC}
+            \end{subitemize}
+            \item \textbf{Oil}
+            \begin{subitemize}
+                \item \textbf{Manual open/close} \dotfill \textbf{CHECK}
+                \item \textbf{Switch position} \dotfill \textbf{AUTOMATIC}
+            \end{subitemize}
         \end{subenumerate}}
     \blueitem{Gear warning}{\textbf{CHECK}}
     \blueitem{Oxygen guage}{\textbf{400 PSI}}
@@ -166,16 +183,60 @@
             \item \textbf{If cold} \dotfill \textbf{3--4 seconds}
             \item \textbf{If hot} \dotfill \textbf{1 second}
         \end{subitemize}}
+    \dblueitem{Pilot}{\emph{``Clear prop!''}}
     \blueitem{Starter}{\textbf{HOLD START}}
-    \blueitem{Mixture control}{\textbf{RUN}}
+    \blueitem{Engine ``catches''}{\textbf{OBSERVE}}
+    \blueitem{Mixture control}{\textbf{RUN} (center)}
+    \blueitem{Starter}{\textbf{RELEASE START}}
+    \blueitem{Throttle}{\textbf{IDLE} (aft)}
 \end{tablenumerate}
+\cautionbox{
+    \begin{itemize}
+        \item Do not open the mixture control until the engine is firing to
+              prevent excess fuel in the induction system.
+        \item If the engine has not started after 2 minutes of cranking,
+              disengage the starter and allow it to cool for one minute before
+              making another attempt.
+    \end{itemize}
+}
 \notebox{
     \begin{itemize}
-        \item If the engine fails to take hold after several revolutions, give it one
-              second's more prime.
-        \item If the engine cuts out after starting, return the mixture control immediately
-              to \textbf{IDLE CUT-OFF}.
+        \item If the engine fails to take hold after several revolutions, give
+              it one second's more prime.
+        \item If the engine cuts out after starting, return the mixture control
+              immediately to \textbf{IDLE CUT-OFF}.
     \end{itemize}
+}
+\clearpage{}
+%------------------------------------------------------------------------------%
+\subsection{POST-START}
+\begin{tablenumerate}
+    \blueitem{Attitude Indicator}{\textbf{UNCAGED}}
+    \blueitem{Radio system}{
+        \begin{subenumerate}
+            \item \textbf{Transmit-Receive switch} \dotfill \textbf{REM}
+            \item \textbf{Select channel} \dotfill \textbf{AS DESIRED}
+        \end{subenumerate}}
+    \blueitem{Oxygen system}{
+        \begin{subenumerate}
+            \item \textbf{Oxygen mix} \dotfill \textbf{NORMAL} (down)
+            \item \textbf{Pressure} \dotfill \textbf{SUFFICIENT}
+            \item \textbf{Flow Indicator} \dotfill \textbf{BLINKING}
+        \end{subenumerate}}
+    \blueitem{Flaps}{\textbf{Raise as hydraulic pres. builds} \dotfill \textbf{OBSERVE}}
+    \blueitem{Oil pressure}{\textbf{>60 PSI}}
+    \blueitem{Throttle}{Adjust to \textbf{IDLE} \dotfill \textbf{1000--1200 RPM}}
+    \blueitem{Wait}{
+        \begin{subenumerate}
+            \item \textbf{Engine oil temp} \dotfill \textbf{>15° C}
+            \item \textbf{Engine oil temp} \dotfill \textbf{>60° C}
+        \end{subenumerate}}
+\end{tablenumerate}
+\warningbox{
+    Attempting a takeoff with low oil or coolant temperature can lead to
+    dire consequences. Pilots often overlook waiting for proper engine
+    warm up; this engine leaves no room for error when engine temperatures
+    are concerned.
 }
 \clearpage{}
 
@@ -191,7 +252,17 @@
             \item \textbf{General taxiing} \dotfill \textbf{NEUTRAL}
             \item \textbf{Sharp turns} \dotfill \textbf{FULL FORWARD}
         \end{subitemize}}
-    \blueitem{Throttle}{\textbf{IDLE} (when moving)}
+    \blueitem{Parking brake}{\textbf{RELEASE}}
+    \blueitem{Throttle}{
+        \begin{subitemize}
+            \item \textbf{To start moving} \dotfill \textbf{UP}
+            \item \textbf{When in motion} \dotfill \textbf{IDLE}
+        \end{subitemize}}
+    \blueitem{Turns}{
+        \begin{subitemize}
+            \item Use \textbf{WHEEL BRAKES} to turn
+            \item Perform continuous \textbf{S-TURNS} for visibility
+        \end{subitemize}}
     \blueitem{At runway}{stop at \textbf{CROSSWIND} angle}
 \end{tablenumerate}
 % Taxiing GFX
@@ -213,12 +284,13 @@
             \item \textbf{Right mag} \dotfill max drop \textbf{100 rpm}
             \item \textbf{Left mag} \dotfill max drop \textbf{130 rpm}
             \item \textbf{Ignition} \dotfill \textbf{BOTH}
-            \item If exceeded limits
+            \item \textbf{If exceeded limits}
             \begin{subitemize}
-                \item Increase manifold pressure \dotfill about \textbf{30°}
-                \item Run engine \dotfill about \textbf{1 min}
-                \item Repeat mag test
-                \item If still fail \dotfill \textbf{ABORT}
+                \item \textbf{Increase throttle} \dotfill about \textbf{30''}
+                \item \textbf{Run engine} \dotfill about \textbf{1 min}
+                \item \textbf{Coolant and oil temp} \dotfill \textbf{OBSERVE}
+                \item \textbf{Repeat mag test}
+                \item \textbf{If fail again} \dotfill \textbf{ABORT}
             \end{subitemize}
         \end{subenumerate}}
     \blueitem{Prop}{
@@ -226,7 +298,7 @@
             \item \textbf{Current rpm} \dotfill \textbf{OBSERVE}
             \item \textbf{Throttle} \dotfill \textbf{DECREASE} (aft)
             \item \textbf{Observe Drop} \dotfill \textbf{300--400 rpm}
-            \item \textbf{Throttle} \dotfill \textbf{INCREASE} (forward)
+            \item \textbf{Throttle} \dotfill \textbf{INCREASE} (fwd)
             \item \textbf{Rpm resumes former} \dotfill \textbf{CHECK}
         \end{subenumerate}}
     \blueitem{Supercharger}{
@@ -237,10 +309,10 @@
         \end{subenumerate}}
     \blueitem{Coolant}{\textbf{AUTO}}
     \blueitem{Oil}{\textbf{AUTO}}
-    \blueitem{Mixture}{\textbf{RUN} or \textbf{AUTO RICH} (forward)}
-    \blueitem{Prop}{\textbf{INCREASE} (forward)}
+    \blueitem{Mixture}{\textbf{RUN} or \textbf{AUTO RICH} (fwd)}
+    \blueitem{Prop}{\textbf{INCREASE} (fwd)}
     \blueitem{Friction locks}{\textbf{TIGHTENED}}
-    \blueitem{Fuel booster}{\textbf{ON} or \textbf{EMERGENCY}}
+    \blueitem{Fuel booster}{\textbf{ON}}
     \blueitem{Hydraulic pres.}{\textbf{800--1100 psi}}
     \blueitem{Canopy}{\textbf{CLOSED}}
     \blueitem{Shoulder harness}{\textbf{LOCKED}}
@@ -271,57 +343,61 @@
     \blueitem{Canopy}{\textbf{CLOSED}}
     \blueitem{Flaps}{\textbf{VERIFY}
         \begin{subitemize}
-            \item Normal weight \dotfill \textbf{UP}
-            \item Heavy weight \dotfill \textbf{10°--20°}
+            \item \textbf{Normal weight} \dotfill \textbf{UP}
+            \item \textbf{Heavy weight} \dotfill \textbf{10°--20°}
         \end{subitemize}}
-    \blueitem{Trim tabs}{\textbf{VERIFY}
+    \blueitem{Trim}{\textbf{VERIFY}
         \begin{subenumerate}
             \item \textbf{Aileron} \dotfill \textbf{0°}
             \item \textbf{Rudder} \dotfill \textbf{5° RIGHT}
             \item \textbf{Elevator}
             \begin{subitemize}
-                \item no combat tanks \dotfill \textbf{2° DOWN}
-                \item with combat tanks \dotfill \textbf{4° DOWN}
+                \item \textbf{no combat tanks} \dotfill \textbf{2° DOWN}
+                \item \textbf{with combat tanks} \dotfill \textbf{4° DOWN}
             \end{subitemize}
         \end{subenumerate}}
     \blueitem{Takeoff roll}{
         \begin{subenumerate}
             \item \textbf{Wheel brakes} \dotfill \textbf{ON}
-            \item \textbf{Prop control} \dotfill \textbf{INCREASE} (forward)
-            \item \textbf{Manifold pressure} \dotfill \textbf{35''}
+            \item \textbf{Prop control} \dotfill \textbf{INCREASE} (fwd)
+            \item \textbf{Throttle} \dotfill \textbf{35''}
             \item \textbf{Wheel brakes} \dotfill \textbf{OFF}
-            \item \textbf{Manifold pressure} \dotfill \textbf{61''}
+            \item \textbf{Throttle} \dotfill \textbf{61''}
             \item \textbf{Speed}
             \begin{subenumerate}
-                \item Center stick \dotfill \textbf{100 mph}
-                \item Rotate \dotfill \textbf{120 mph}
+                \item \textbf{Center stick} \dotfill \textbf{100 mph}
+                \item \textbf{Rotate} \dotfill \textbf{120 mph}
+            \end{subenumerate}
+            \item \textbf{Landing gear}
+            \begin{subenumerate}
+                \item \textbf{Control handle} \dotfill \textbf{UP}
+                \item \textbf{Gear indicator} \dotfill \textbf{OFF}
             \end{subenumerate}
         \end{subenumerate}}
-    \blueitem{At 500ft}{
+    \blueitem{At 500'}{
         \begin{subenumerate}
-            \item \textbf{Manifold pressure} \dotfill \textbf{46''}
+            \item \textbf{Throttle} \dotfill \textbf{46''}
             \item \textbf{Prop control} \dotfill \textbf{2700 rpm}
             \item \textbf{Trim} \dotfill \textbf{AS DESIRED}
             \item \textbf{Booster Pump} \dotfill \textbf{NORMAL}
             \item \textbf{Instruments} \dotfill \textbf{CHECK}
             \begin{subitemize}
-                \item Ammeter at takeoff \dotfill \textbf{< 100 amps}
-                \item Ammeter after 5 min \dotfill \textbf{< 50 amps}
-                \item Hydraulic pres. \dotfill \textbf{100 psi} after gear retracted
-                \item If instruments out of range \dotfill \textbf{ABORT}
+                \item \textbf{Ammeter at takeoff} \dotfill \textbf{< 100 amps}
+                \item \textbf{Ammeter after 5 min} \dotfill \textbf{< 50 amps}
+                \item \textbf{Hydraulic pres.} \dotfill \textbf{100 psi}
+                \item \textbf{If instruments out of range} \dotfill \textbf{ABORT}
             \end{subitemize}
         \end{subenumerate}}
 \end{tablenumerate}
-
+\cautionbox{
+    Don't brake the wheels after takeoff. Doing so may fuse the discs of brakes
+    that are hot from extended taxiing. If this happens you'll nose up or
+    groundloop on landing.}
 \notebox{
     Do not lift the tail too soon this increases torque action. Pushing the
     stick forward unlocks the tail wheel, thereby making steering difficult.
     Hold the tail DOWN until sufficient speed for rudder control is attained
     then raise the tail slowly.}
-\cautionbox{
-    Don't brake the wheels after takeoff. Doing so may fuse the discs of brakes
-    that are hot from extended taxiing. If this happens you'll nose up or
-    groundloop on landing.}
 \clearpage{}
 
 
@@ -332,8 +408,8 @@
 \begin{tablenumerate}
     \blueitem{Fuel supply}{
         \begin{subenumerate}
-            \item Fullest tank \dotfill \textbf{SELECTED}
-            \item Booster pump \dotfill \textbf{ON}
+            \item \textbf{Fullest tank} \dotfill \textbf{SELECTED}
+            \item \textbf{Booster pump} \dotfill \textbf{ON}
         \end{subenumerate}}
     \blueitem{Mixture control}{\textbf{RUN} or \textbf{AUTO RICH}}
     \blueitem{Airspeed}{\textbf{200--225 IAS} before peeloff}
@@ -348,28 +424,29 @@
     \blueitem{Airspeed}{\textbf{170 IAS}}
     \blueitem{Landing gear}{
         \begin{subenumerate}
-            \item Control handle \dotfill \textbf{DOWN} and \textbf{LOCKED}
-            \item Gear indicator \dotfill \textbf{ILLUMINATED}
-            \item Hydraulic pressure \dotfill \textbf{1000 PSI}
-            \item Trim \dotfill \textbf{ADJUSTED}
+            \item \textbf{Control handle} \dotfill \textbf{DOWN} and \textbf{LOCKED}
+            \item \textbf{Gear indicator} \dotfill \textbf{SAFE}
+            \item \textbf{Hydraulic pressure} \dotfill \textbf{1000 PSI}
+            \item \textbf{Trim} \dotfill \textbf{ADJUSTED}
         \end{subenumerate}}
     \blueitem{Airspeed}{\textbf{150 IAS}}
-    \blueitem{Line up final}{During rollout onto final approach
+    \blueitem{Line up final}{\textbf{During rollout onto final approach}
         \begin{subenumerate}
-            \item Flaps \dotfill \textbf{DOWN}
-            \item Airspeed \dotfill \textbf{115--120 IAS}
+            \item \textbf{Altitude} \dotfill \textbf{400'}
+            \item \textbf{Flaps} \dotfill \textbf{DOWN}
+            \item \textbf{Airspeed} \dotfill \textbf{115--120 IAS}
         \end{subenumerate}}
     \blueitem{At runway}{
         \begin{subenumerate}
-            \item Break glide
-            \item Hold in 3-point attitude
-            \item Stick to rear until turnoff
+            \item \textbf{Break glide}
+            \item \textbf{Hold in 3-point attitude}
+            \item \textbf{Stick to rear until turnoff}
         \end{subenumerate}}
 \end{tablenumerate}
 \cautionbox{
     Never push stick forward and unlock tailwheel during a turn. Release the tailwheel before starting turn.
 }
-% Landing  GFX
+% Landing GFX
 \begin{center}
     \includegraphics[
         height = 12.8cm,
@@ -388,7 +465,7 @@
 
     \blueitem{Advance throttle}{
         \begin{subenumerate}
-            \item \textbf{Manifold pressure} \dotfill \textbf{46''}
+            \item \textbf{Throttle} \dotfill \textbf{46''}
             \item \textbf{Prop speed} \dotfill \textbf{2700 RPM}
             \item \textbf{Counteract torque} \dotfill \textbf{RIGHT RUDDER}
         \end{subenumerate}}
@@ -409,7 +486,7 @@
     \blueitem{Raise flaps}{
         \begin{subenumerate}
             \item \textbf{Airspeed} \dotfill \textbf{120 IAS}
-            \item \textbf{Altitude} \dotfill \textbf{>500 FT}
+            \item \textbf{Altitude} \dotfill \textbf{>500'}
             \item \textbf{Raise flaps slowly} \dotfill \textbf{10° INCREMENTS}
             \item \textbf{Change in attitude} \dotfill \textbf{OBSERVE}
         \end{subenumerate}}
@@ -428,11 +505,11 @@
 %------------------------------------------------------------------------------%
 \subsection{STOPPING THE ENGINE}
 \begin{tablenumerate}
-    \blueitem{Prop control}{\textbf{INCREASE} (forward)}
+    \blueitem{Prop control}{\textbf{INCREASE} (fwd)}
     \blueitem{Throttle}{\textbf{Idle engine at} \dotfill \textbf{1500 RPM}}
     \blueitem{Booster pump}{\textbf{OFF}}
     \blueitem{Mixture control}{\textbf{IDLE CUT-OFF}}
-    \blueitem{Throttle}{\textbf{When < 700 RPM} \dotfill \textbf{OPEN} (forward)}
+    \blueitem{Throttle}{\textbf{When < 700 RPM} \dotfill \textbf{OPEN} (fwd)}
     \blueitem{Ignition}{\textbf{OFF}}
     \blueitem{Electrical system}{\textbf{All switches} \dotfill \textbf{OFF}}
     \blueitem{Flight controls}{\textbf{LOCKED}}
@@ -459,7 +536,7 @@
             \item \textbf{GREEN} \dotfill \textbf{STEADY}-\textbf{OFF}-\textbf{KEY}
         \end{subitemize}
         When set to \textbf{KEY}, recognition lights activated by keypress on \textbf{RECOGN LIGHTS KEY} button.
-        }
+    }
 \end{tablenumerate}
 
 \clearpage{}
